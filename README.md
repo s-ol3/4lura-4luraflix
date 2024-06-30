@@ -1,7 +1,7 @@
 # Challenge 4luraflix
 
 
-🔗 https://4lura-4luraflix.vercel.app
+🔗 https://4lura-4luraflix.vercel.app/
 
 Link para visualización online con fake api en vercel. Funciona el crud pero la actualización es lenta (puede tardar varios minutos o requerir una recarga de la página para observar los cambios), funcionan las alertas, guarda los cambios una o dos veces. 
 
