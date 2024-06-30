@@ -1,5 +1,6 @@
 # Challenge 4luraflix
 
+Proyecto para el curso "Practicando React: Challenge 4luraflix", de 4lura Latam.
 
 🔗 https://4lura-4luraflix.vercel.app/
 
