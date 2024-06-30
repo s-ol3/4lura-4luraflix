@@ -1,13 +1,156 @@
+:root {
+  --blue-flix: #247be6;
+  /* --text-banner-1: #ffffff70; */
+  /* #ffffff70;    #ffffffad;*/
+  --banner-text-titulo: #797979;
+  --banner-text-subtitulo: #797979;
+  --banner-text-parrafo: #797979;
+
+  --btn-nav: #797979;
+  --hover-btn-nav: #636363;
+
+  --crud-btn: #9c9c9c;
+  --crud-btn-bg: #000000;
+  --crud-btn-bg-hover: #3e3e3e;
+
+  --scrollbar: #247be6;
+  --scrollbar-track: #1e1e1e;
+
+  --scrollbar-x: #333333;
+  --scrollbar-track: #1e1e1e;
+
+  --background-principal: #111111;/* #191919 */ /* youtube #0f0f0f; */
+  --background-nav-footer: #000000;
+
+  --shadow-nav: var(--blue-flix) 1px -20px 4rem 5px;
+  /* --shadow-nav: none; */
+  --shadow-footer: var(--blue-flix) 0px 1px 1rem 0px;
+  /* --shadow-footer: none; */
+  
+  --form-input: #777777; /* texto ingresado */
+  --form-input-border: #333333;
+  --form-input-placeholder: #4b4b4b;
+  --form-input-options: #797979b6;
+  --form-validacion: #e30000;
+  --form-label: #484848;
+
+
+ 
+}
+
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  /* font-family: monospace, 'Segoe UI', 'Roboto'; */
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+/* fin reset */
+
+
+
+/* * {
+  font-family: monospace, 'Segoe UI', 'Roboto';  aca no xq no se ver fontawesome icons
+} */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: monospace, 'Segoe UI', 'Roboto';
+  /* font-family: "Oswald", sans-serif;*/
+  /*font-family: 'Space Mono', monospace; */
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Rajdhani', sans-serif; */
+  /* font-family: 'Nova Round', cursive; */
+  /* font-family: "JetBrains Mono", monospace;
+  font-family: "Playwrite NG Modern", cursive; */
+  /* font-family: "MuseoModerno", sans-serif; */
+
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* scrollbar */
+/* en pagina normal, no para firefox. cambió visualizacion con nuevas actualizaciones de navegadores */
+body::-webkit-scrollbar {
+  /* width: 0.2em; */
+  width: 8px;
 }
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
+  border-radius: 10px;
+  /* height: 6em; */
+}
+
+/* para firefox, solo colorea, no ancho personalizado, solo 'thin' */
+/* * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue-flix) #191919;
+} */

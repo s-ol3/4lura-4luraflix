@@ -6,13 +6,20 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.0",
+    "react-player": "^2.16.0",
+    "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.11",
+    "swiper": "^9.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:server": "json-server --watch src/db.json --port 3001",
+    "start": "concurrently \"npm run start:server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -22,6 +29,10 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "json-server": "^0.17.3"
   },
   "browserslist": {
     "production": [
