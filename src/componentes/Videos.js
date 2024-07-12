@@ -71,6 +71,8 @@ const SwiperStyle = styled(Swiper)`
     margin-bottom: 5em;
   }
 
+
+
   /* *****con scrollbar-----------scrollbar quedan presentes siempre aunque no haya mas para navegar, y unifican alturas entre categorias, los swiper btn aparecen solo cuando hay mas para navegar--porque los puse abajo-- y cuando no hay mas, quedan todas apiladas las categorias- */
  /*  overflow-x: scroll !important; */  /* auto para que aparezca solo cuando hay mas para navegar */
 
@@ -89,10 +91,14 @@ const SwiperStyle = styled(Swiper)`
 
 
 
+  //apago los dos , dejo scrollbar de react swiper
+
+
+
   /* *****con swiper btn------------- no deja desplazar con pad notebook, ver*/
   .swiper-button-prev,
   .swiper-button-next {
-    /* display: none; */
+    display: none;
 
     /* position: fixed; */
     position: sticky;
@@ -140,7 +146,30 @@ const SwiperStyle = styled(Swiper)`
     cursor: auto;
     pointer-events: none;
   }
+
+
+
+
+  /* ***** swiper scrollbar------------- apague scrollbar comun y btn swiper */
+  .swiper-scrollbar {
+    //width: 50%; /* ancho scrollbar */
+    height: 5px;
+    margin: 1em 0;
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: var(--scrollbar-x); /* color del handle */
+    border-radius: 10px; 
+    margin: 1em 0;
+  }
+
+  .swiper-scrollbar-drag:hover {
+    background-color: var(--scrollbar-x-hover); /* handle when hover */
+  }
+
 `;
+
+
 
 const SwiperVideos = styled(SwiperSlide)`
   cursor: pointer;
@@ -315,13 +344,13 @@ const Videos = ({ categorias, videos }) => {
 
                 <SwiperStyle
                   spaceBetween={10}
-                  slidesPerView={4}
+                  slidesPerView={3}
                   slidesPerGroup={2}
                   navigation={true}
 
                   // modules={[Navigation]}
                   modules={[Navigation, Keyboard, Mousewheel, Scrollbar]}
-                  //mousewheel //dificulta un poco el scroll vertical
+                  mousewheel //dificulta un poco el scroll vertical, ver
                   keyboard //desplazarse con teclado sobre container videos, mousewhell para lo mismo scrolleando sobre container
                   scrollbar={{ draggable: true }}
 
