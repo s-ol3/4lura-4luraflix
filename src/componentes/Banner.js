@@ -61,8 +61,8 @@ const BannerContent = styled.div`
   position: absolute;
   height: 40vh;
   top: 33vh;
-  left: 5%;
-  right: 5%;
+  left: 6%;  /* 5 y 5 abajo tenia */
+  right: 6%;
   gap: 3em;
   z-index: 100;
   display: flex;

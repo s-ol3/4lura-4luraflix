@@ -251,7 +251,7 @@ const Videos = ({ categorias, videos }) => {
     try {
       const response = await fetch(`${API_URL}/categorias`);
       const data = await response.json();
-      
+
     } catch (error) {
       console.error('Error fetching data de la API:', error);
     }
@@ -350,7 +350,8 @@ const Videos = ({ categorias, videos }) => {
 
                   // modules={[Navigation]}
                   modules={[Navigation, Keyboard, Mousewheel, Scrollbar]}
-                  mousewheel //dificulta un poco el scroll vertical, ver
+                  //mousewheel //dificulta un poco el scroll vertical, ver
+                  mousewheel={{ passive: true }} //solo daba una advertencia en consola
                   keyboard //desplazarse con teclado sobre container videos, mousewhell para lo mismo scrolleando sobre container
                   scrollbar={{ draggable: true }}
 

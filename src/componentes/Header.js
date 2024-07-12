@@ -21,7 +21,7 @@ const HeaderContainer = styled.div`
 
 const Logo = styled.img`
   max-height: 60%;
-  margin-left: 7%;
+  margin-left: 6%; /* 7 */
   cursor: pointer;
   
   @media (max-width: 600px) {
