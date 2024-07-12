@@ -345,7 +345,7 @@ const Videos = ({ categorias, videos }) => {
                 <SwiperStyle
                   spaceBetween={10}
                   slidesPerView={3}
-                  slidesPerGroup={2}
+                  slidesPerGroup={1}
                   navigation={true}
 
                   // modules={[Navigation]}
@@ -356,7 +356,7 @@ const Videos = ({ categorias, videos }) => {
 
                   breakpoints={{
                     320: { slidesPerView: 1 },
-                    640: { slidesPerView: 2 },
+                    640: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
                     992: { slidesPerView: 3 },
                     1200: { slidesPerView: 3 },
