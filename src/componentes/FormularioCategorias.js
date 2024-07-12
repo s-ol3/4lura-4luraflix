@@ -134,7 +134,11 @@ const Table = styled.table`
   color: var(--form-input);
 
   @media (max-width: 800px) {
-    width: 95%;
+    width: 100%;  /* 95%; */
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 

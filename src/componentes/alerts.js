@@ -22,6 +22,18 @@ const StyledAlert = styled.div`
     align-items: center;
     display: flex;
     padding: 0 1em;
+
+    @media (max-width: 600px) {
+    /*   left: calc(50% - 150px); 
+      margin-left: -150px;
+      transform: translateX(-50%); */
+
+
+      /* right: unset; 
+      left: 50%; 
+      margin-left: 0;  */
+    }
+    
   }
 
   &.indicacion {
@@ -38,12 +50,30 @@ const StyledAlert = styled.div`
     align-items: center;
     display: flex;
     padding: 0 1em;
+
+    @media (max-width: 600px) {
+      /* right: 10%;
+      left: 10%; */
+
+      //transform: translateX(-50%); /* para centrar exactamente, rompe animacion*/
+  
+      left: 50%; /* asegura que este centrado horizontalmente */
+      margin-left: -150px; /* ajuste del margen izquierdo para centrar exactamente */
+      right: unset; /* elimina el ajuste de right */
+
+    }
   }
 
   &.error {
     color: #f2dede;
     border-color: #ebccd1;
     background-color: #a94442;
+
+    @media (max-width: 600px) {
+      /* left: 50%; 
+      margin-left: -150px; 
+      right: unset; */
+    }
   }
 
   /* animaciones */
