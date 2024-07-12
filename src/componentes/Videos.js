@@ -1,13 +1,18 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+
+/* import { Navigation } from 'swiper'; */
+
 import 'swiper/swiper-bundle.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Keyboard, Mousewheel, Scrollbar } from 'swiper/modules'; // para scroll o flechas teclado sobre el container de videos 
+
 import styled from 'styled-components';
 import MyContext from '../Context';
 import FormularioModalEdit from './FormularioModalEdit';
 import Alert from './alerts';
 import { API_URL } from './apiConfig';
+
 
 
 ////////////////////////////////////////////////////////////////////////////
@@ -66,8 +71,8 @@ const SwiperStyle = styled(Swiper)`
     margin-bottom: 5em;
   }
 
-  /* *****con scrollbar-----------scrollbar quedan presentes siempre aunque no haya mas para navegar, y unifican alturas entre categorias, los swiper btn aparecen solo cuando hay mas para navegar--porque los puse abajo, genia-- y cuando no hay mas, quedan todoas apiladas las categorias- */
-  overflow-x: scroll !important;  /* auto para que aparezca solo cuando hay mas para navegar */
+  /* *****con scrollbar-----------scrollbar quedan presentes siempre aunque no haya mas para navegar, y unifican alturas entre categorias, los swiper btn aparecen solo cuando hay mas para navegar--porque los puse abajo-- y cuando no hay mas, quedan todas apiladas las categorias- */
+ /*  overflow-x: scroll !important; */  /* auto para que aparezca solo cuando hay mas para navegar */
 
   ::-webkit-scrollbar {
     height: 8px;
@@ -79,7 +84,7 @@ const SwiperStyle = styled(Swiper)`
     background-color: var(--scrollbar-x);
     border-radius: 10px;
   }
-  white-space: nowrap; /* Evitar que los elementos se envuelvan a múltiples líneas */
+  white-space: nowrap; /* evitar que los elementos se envuelvan a multiples lineas */
   /* *****con scrollbar------------- */
 
 
@@ -87,7 +92,7 @@ const SwiperStyle = styled(Swiper)`
   /* *****con swiper btn------------- no deja desplazar con pad notebook, ver*/
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
+    /* display: none; */
 
     /* position: fixed; */
     position: sticky;
@@ -201,7 +206,7 @@ const Crud = styled.div`
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
 const Videos = ({ categorias, videos }) => {
-  
+
   const [showModal, setShowModal] = useState(false);
   const [videoToEdit, setVideoToEdit] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
@@ -217,7 +222,7 @@ const Videos = ({ categorias, videos }) => {
     try {
       const response = await fetch(`${API_URL}/categorias`);
       const data = await response.json();
-      // No necesitamos setear categorias aquí, ya que lo manejas desde props
+      
     } catch (error) {
       console.error('Error fetching data de la API:', error);
     }
@@ -313,7 +318,13 @@ const Videos = ({ categorias, videos }) => {
                   slidesPerView={4}
                   slidesPerGroup={2}
                   navigation={true}
-                  modules={[Navigation]}
+
+                  // modules={[Navigation]}
+                  modules={[Navigation, Keyboard, Mousewheel, Scrollbar]}
+                  //mousewheel //dificulta un poco el scroll vertical
+                  keyboard //desplazarse con teclado sobre container videos, mousewhell para lo mismo scrolleando sobre container
+                  scrollbar={{ draggable: true }}
+
                   breakpoints={{
                     320: { slidesPerView: 1 },
                     640: { slidesPerView: 2 },

@@ -140,7 +140,7 @@
       "titulo": "vf",
       "videoLink": "f",
       "videoImgLink": "img/comodin.png",
-      "videoCategoria": "B Editando 23 local",
+      "videoCategoria": "B Editando 33 local",
       "descripcion": "f",
       "id": 37
     }
@@ -171,9 +171,9 @@
       "id": 4
     },
     {
-      "categoriaNombre": "B Editando 23 local",
+      "categoriaNombre": "B Editando 33 local",
       "categoriaDescripcion": "...",
-      "categoriaColor": "#7e1137",
+      "categoriaColor": "#d10000",
       "id": 5
     }
   ]
