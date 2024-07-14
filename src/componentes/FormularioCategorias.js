@@ -11,7 +11,7 @@ import { API_URL } from './apiConfig';
 //styled components ////////////////////////////////////////////////////////
 const FormContainer = styled.div`
   background-color:var(--background-principal);
-  padding: 2rem 30rem 8rem; /* Padding por defecto */
+  padding: 2rem 30rem 8rem; 
 
   min-width: 320px;
 

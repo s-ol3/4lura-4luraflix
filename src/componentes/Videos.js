@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Keyboard, Mousewheel, Scrollbar } from 'swiper/modules'; // para scroll o flechas teclado sobre el container de videos 
+import { Navigation, Keyboard, Mousewheel, Scrollbar } from 'swiper/modules'; // para moverse c scroll o flechas teclado sobre el container de videos 
 
 import styled from 'styled-components';
 import MyContext from '../Context';
@@ -75,7 +75,7 @@ const SwiperStyle = styled(Swiper)`
 
   /* *****con scrollbar-----------scrollbar quedan presentes siempre aunque no haya mas para navegar, y unifican alturas entre categorias, los swiper btn aparecen solo cuando hay mas para navegar--porque los puse abajo-- y cuando no hay mas, quedan todas apiladas las categorias- */
  /*  overflow-x: scroll !important; */  /* auto para que aparezca solo cuando hay mas para navegar */
-
+/*
   ::-webkit-scrollbar {
     height: 8px;
   }
@@ -98,7 +98,7 @@ const SwiperStyle = styled(Swiper)`
   /* *****con swiper btn------------- no deja desplazar con pad notebook, ver*/
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
+    display: none;  /* ---------------- */
 
     /* position: fixed; */
     position: sticky;
@@ -150,7 +150,7 @@ const SwiperStyle = styled(Swiper)`
 
 
 
-  /* ***** swiper scrollbar------------- apague scrollbar comun y btn swiper */
+  /* ***** swiper scrollbar, final------------- apague scrollbar comun y btn swiper */
   .swiper-scrollbar {
     //width: 50%; /* ancho scrollbar */
     height: 5px;
@@ -351,7 +351,7 @@ const Videos = ({ categorias, videos }) => {
                   // modules={[Navigation]}
                   modules={[Navigation, Keyboard, Mousewheel, Scrollbar]}
                   //mousewheel //dificulta un poco el scroll vertical, ver
-                  mousewheel={{ passive: true }} //solo daba una advertencia en consola
+                  mousewheel={{ passive: true }} //solo daba una advertencia en consola en edge, no brave, capaz es x una extension, ver
                   keyboard //desplazarse con teclado sobre container videos, mousewhell para lo mismo scrolleando sobre container
                   scrollbar={{ draggable: true }}
 
