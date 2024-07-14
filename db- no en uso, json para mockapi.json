@@ -1,0 +1,158 @@
+{
+  "videos-----------con comillas en los id para que funcione add delete edit": [
+    {
+      "id": "1",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Front End",
+      "videoImgLink": "/img/front1.jpg",
+      "videoLink": "https://www.youtube.com/embed/PztCEdIJITY",
+      "descripcion": ""
+    },
+    {
+      "id": "2",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Front End",
+      "videoImgLink": "/img/front2.jpg",
+      "videoLink": "https://www.youtube.com/embed/GJfOSoaXk4s",
+      "descripcion": ""
+    },
+    {
+      "id": "3",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Front End",
+      "videoImgLink": "/img/front3.jpg",
+      "videoLink": "https://www.youtube.com/embed/rpvrLaBQwgg",
+      "descripcion": ""
+    },
+    {
+      "id": "4",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Back End",
+      "videoImgLink": "/img/back1.jpg",
+      "videoLink": "https://www.youtube.com/embed/t-iqt1b2qqk",
+      "descripcion": ""
+    },
+    {
+      "id": "5",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Back End",
+      "videoImgLink": "/img/back2.jpg",
+      "videoLink": "https://www.youtube.com/embed/cLLKVd5CNLc",
+      "descripcion": ""
+    },
+    {
+      "id": "6",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Back End",
+      "videoImgLink": "/img/back3.jpg",
+      "videoLink": "https://www.youtube.com/embed/EoPvlE85XAQ",
+      "descripcion": ""
+    },
+    {
+      "id": "7",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Innovación y Gestión",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/soft1.jpg",
+      "videoLink": "https://www.youtube.com/embed/vhwspfvI52k",
+      "descripcion": ""
+    },
+    {
+      "id": "8",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Innovación y Gestión",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/soft2.jpg",
+      "videoLink": "https://www.youtube.com/embed/YhR7Zp8NUzE",
+      "descripcion": ""
+    },
+    {
+      "id": "9",
+      "titulo": "xxxxxxxxxxxxx",
+      "videoCategoria": "Innovación y Gestión",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/soft3.jpg",
+      "videoLink": "https://www.youtube.com/embed/6N3OkLCfK-0",
+      "descripcion": "..."
+    },
+    {
+      "titulo": "s",
+      "videoLink": "https://www.youtube.com/watch?v=UuAX5azcvDQ",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/front5.jpg",
+      "videoCategoria": "Front End",
+      "descripcion": "",
+      "id": "12"
+    },
+    {
+      "titulo": "s",
+      "videoLink": "https://www.youtube.com/watch?v=ts9qfCKamKg",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/front4.jpg",
+      "videoCategoria": "Front End",
+      "descripcion": "",
+      "id": "13"
+    },
+    {
+      "titulo": "a",
+      "videoLink": "https://www.youtube.com/watch?v=ov7vA5HFe6w",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/comodin.png",
+      "videoCategoria": "Back End",
+      "descripcion": "",
+      "id": "14"
+    },
+    {
+      "titulo": "a",
+      "videoLink": "https://www.youtube.com/watch?v=ov7vA5HFe6w",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/comodin.png",
+      "videoCategoria": "Back End",
+      "descripcion": "",
+      "id": "15"
+    },
+    {
+      "titulo": "s",
+      "videoLink": "https://www.youtube.com/watch?v=UuAX5azcvDQ",
+      "videoImgLink": "/img/comodin.png",
+      "videoCategoria": "Front End",
+      "descripcion": "..",
+      "id": "18"
+    },
+    {
+      "titulo": "1",
+      "videoLink": "1",
+      "videoImgLink": "https://raw.githubusercontent.com/s-ol3/4lura-4luraflix/main/public/img/comodin.png",
+      "videoCategoria": "Innovación y Gestión",
+      "descripcion": "1",
+      "id": "39"
+    },
+    {
+      "titulo": "d",
+      "videoLink": "https://www.youtube.com/embed/PztCEdIJITY",
+      "videoImgLink": "img/front1.jpg",
+      "videoCategoria": "Pruebas Mockapi",
+      "descripcion": "d",
+      "id": "40"
+    }
+  ],
+  "categorias": [
+    {
+      "categoriaNombre": "Front End",
+      "categoriaDescripcion": "Alura Latam Front End ",
+      "categoriaColor": "#6BD1FF",
+      "id": "1"
+    },
+    {
+      "categoriaNombre": "Back End",
+      "categoriaDescripcion": "Alura Latam Back End",
+      "categoriaColor": "#00C86F",
+      "id": "2"
+    },
+    {
+      "categoriaNombre": "Innovación y Gestión",
+      "categoriaDescripcion": "Innovación y Gestión",
+      "categoriaColor": "#FFBA05",
+      "id": "3"
+    },
+    {
+      "categoriaNombre": "Pruebas Mockapi",
+      "categoriaDescripcion": "...",
+      "categoriaColor": "#262864",
+      "id": "5"
+    }
+  ]
+}
